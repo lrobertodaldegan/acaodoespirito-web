@@ -1,3 +1,14 @@
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+a {
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +16,11 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.section{
+  padding: 10px 15%;
+  font-size: 18px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,6 +43,16 @@
 .App-link {
   color: #61dafb;
 }
+.main-menu-logo{
+  filter:invert(100%);
+  height: 60px;
+}
+.align-left{
+  text-align: left !important;
+}
+.align-right{
+  text-align: right !important;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +60,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section2-tbl{
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .section2-tbl-mobile{
+      display: none;
   }
 }

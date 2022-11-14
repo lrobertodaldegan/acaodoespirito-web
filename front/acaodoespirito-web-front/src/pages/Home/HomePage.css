@@ -1,0 +1,74 @@
+.hp-content-section1{
+    background: rgb(0,0,0);
+    
+    color: rgb(250,250,250);
+}
+.section1-title{
+    margin: 50px 0;
+    font-size: 40px;
+}
+hr{
+    width: 20%;
+    color: rgb(250,250,250);
+}
+
+.section1-mvv{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-bottom: 80px;
+}
+.section1-mvv-child{
+    width: 33.3%;
+    text-align: justify;
+}
+
+.section1-mvv-child:nth-child(even){
+    margin: 0 30px;
+}
+
+.hp-content-section2{
+    margin-bottom: 50px;
+}
+
+.section2-map a{
+    color: rgb(0,0,0);
+}
+
+.hp-content-section2 h3{
+    margin: 40px 0;
+}
+
+.hp-content-section2 legend{
+    font-size: 14px;
+}
+.section2-tbl, .section2-tbl-mobile{
+    overflow-x: scroll;
+    border: 1px solid rgb(130,130,130);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.section2-tbl{
+    min-width: 700px;
+}
+
+.section2-tbl-mobile th{
+    border-right: 1px solid rgb(130,130,130);
+    color: rgb(50,50,50);
+}
+
+.section2-tbl th,
+.section2-tbl-mobile th,
+.section2-tbl b,
+.section2-tbl-mobile b{
+    color: rgb(50,50,50);
+}
+
+.section2-tbl th,
+.section2-tbl td,
+.section2-tbl-mobile th,
+.section2-tbl-mobile td{
+    padding:10px 5px;
+}
