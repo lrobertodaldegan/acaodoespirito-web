@@ -5,6 +5,7 @@
 .menu-button, .close-menu-button{
     color: rgb(250,250,250);
     background: none;
+    border: none;
     height: 50px;
     width: 50px;
 }

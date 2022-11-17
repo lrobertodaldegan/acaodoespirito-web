@@ -5,7 +5,8 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-a {
+a,
+a:active{
   text-decoration: none;
 }
 legend{
