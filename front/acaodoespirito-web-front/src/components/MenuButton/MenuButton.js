@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../assets/img/logo.png'
 import './MenuButton.css'
+import SocialIcons from '../SocialIcons/SocialIcons'
 
 const MenuButton = () => {
     const [showOptions, setShowOptions] = useState(false);
@@ -55,7 +56,7 @@ const MenuButton = () => {
                         <li><a href="/">?</a></li>
                     </ul>
                     <div className="menu-options-social">
-                        <a href="/">INSTA</a> - <a href="/">YT</a>
+                        <SocialIcons size="xl"/>
                     </div>
                 </div>
             </div>
