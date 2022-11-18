@@ -5,13 +5,16 @@ import './MainMenu.css';
 
 const MainMenu = () => {
     return (
-        <div className="main-menu">
+        <div className="main-menu" id="main-menu">
             <div className="menu-actions align-left">
                 <MenuButton />
             </div>
             <div className="logo">
                 <a href="/">
-                    <img src={logo} alt="Ação do Espírito" className="main-menu-logo"/>
+                    <img src={logo} alt="Ação do Espírito" 
+                        className="main-menu-logo"
+                        id="main-menu-logo"
+                    />
                 </a>
             </div>
             <div className="other-actions align-right">

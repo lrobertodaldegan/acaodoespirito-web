@@ -7,10 +7,13 @@ import {
 import logo from '../../assets/img/casa_acao_logo022021_edited.png'
 import qrcode from '../../assets/img/qrcode_pix_casaacao.png'
 import './CasaAcaoPage.css'
-import Page from '../../components/Page/Page'
+import { useEffect } from 'react'
 
 const CasaAcaoPage = () => { 
-    return <Page hideMainMenu={true} hideMainFooter={true} content={
+    useEffect(() => {
+        document.getElementById('main-menu').style = "background:rgb(180,180,180);";
+    }, []);
+    return (
         <div className="casaacao-page-content">
             <div className="section">
                 <div className="casaacao-logo-top">
@@ -23,22 +26,22 @@ const CasaAcaoPage = () => {
                     <h3>O QUE É 'CASA AÇÃO'?</h3>
 
                     <p>
-                        Somos uma república que, além de <b>abrigar jovens</b>
+                        Somos uma república que, além de <b>abrigar jovens </b> 
                          oriundos de <b>casas lares</b>, fornece 
-                         <b>suporte profissional</b>,
-                         <b>emocional</b> e <b>espiritual</b> para seu
-                         <b>desenvolvimento</b>.
+                         <b> suporte profissional</b>, 
+                         <b> emocional</b> e <b>espiritual</b> para seu 
+                         <b> desenvolvimento</b>.
                     </p>
                     <p>
                         <b>CASA</b> significa <b>C</b>omunidade de 
-                        <b>A</b>linhamento <b>S</b>ocial e <b>A</b>vivamento.
+                        <b> A</b>linhamento <b>S</b>ocial e <b>A</b>vivamento.
                     </p>
                     <p>
-                        Entendemos que quando o <b>evangelho</b> chega,
-                        ele é capaz de <b>transformar</b> o local onde chegou.
-                        Que seja assim dentro dessa <b>casa</b>, uma
-                        <b>família</b> para esses <b>jovens</b>, mas uma 
-                        <b>mudança</b> na <b>realidade social</b>.
+                        Entendemos que quando o <b>evangelho</b> chega, 
+                        ele é capaz de <b>transformar</b> o local onde chegou. 
+                        Que seja assim dentro dessa <b>casa</b>, uma 
+                        <b> família</b> para esses <b>jovens</b>, mas uma 
+                        <b> mudança</b> na <b>realidade social</b>.
                     </p>
                 </div>
             </div>
@@ -66,30 +69,30 @@ const CasaAcaoPage = () => {
                     </div>
 
                     <p>
-                        Além de <b>proporcionar</b> um ambiente de
-                        <b>acolhimento</b> para esses <b>jovens</b>,
-                        entendemos que a <b>fé</b> é <b>essencial</b>
-                        para tratarmos a <b>espiritualidade</b>,
-                        amar a <b>Deus</b> acima de tudo e amar ao 
-                        <b>próximo</b> assim como <b>Jesus</b> nos ensinou.
-                        Através de <b>cultos</b>, participação de <b>cursos</b>
-                        e rodas de <b>conversas</b> vamos intruir esses 
-                        <b>jovens</b> a <b>viver</b> com <b>fé</b>
+                        Além de <b>proporcionar</b> um ambiente de 
+                        <b> acolhimento</b> para esses <b>jovens</b>, 
+                        entendemos que a <b>fé</b> é <b>essencial </b> 
+                        para tratarmos a <b>espiritualidade</b>, 
+                        amar a <b>Deus</b> acima de tudo e amar ao  
+                        <b> próximo</b> assim como <b>Jesus</b> nos ensinou. 
+                        Através de <b>cultos</b>, participação de <b>cursos </b> 
+                        e rodas de <b>conversas</b> vamos intruir esses  
+                        <b> jovens</b> a <b>viver</b> com <b>fé </b> 
                         desenvolvida em <b>Jesus</b>.
                     </p>
                     <p>
-                        Com isso o nosso <b>próximo passo</b> também é
-                        <b>desenvolver</b> esse <b>jovem</b> de forma
-                        <b>integral, estudos</b> e <b>trabalho</b>,
-                        sendo ele o <b>trabalho</b> formal ou 
-                        <b>empreendedorismo social</b>.
+                        Com isso o nosso <b>próximo passo</b> também é 
+                        <b> desenvolver</b> esse <b>jovem</b> de forma 
+                        <b> integral, estudos</b> e <b>trabalho</b>, 
+                        sendo ele o <b>trabalho</b> formal ou  
+                        <b> empreendedorismo social</b>. 
                     </p>
                     <p>
-                        A <b>república</b> conta com o <b>suporte</b>
-                        de <b>missionários integrais, assistentes sociais, 
-                        psicólogos</b> e <b>parceria</b> com diversas áreas que 
-                        <b>colaborem</b> para o <b>desenvolvimento</b> desse
-                        <b>jovem</b> de forma <b>íntegra</b>.
+                        A <b>república</b> conta com o <b>suporte</b> 
+                        de <b>missionários integrais, assistentes sociais,  
+                        psicólogos</b> e <b>parceria</b> com diversas áreas que  
+                        <b> colaborem</b> para o <b>desenvolvimento</b> desse 
+                        <b> jovem</b> de forma <b>íntegra</b>. 
                     </p>
                     <p>
                         Deseja fazer parte dessa história? Entre em contato!
@@ -126,7 +129,7 @@ const CasaAcaoPage = () => {
                 </legend>
             </div>
         </div>
-    }/>
+    );
 }
 
 export default CasaAcaoPage;

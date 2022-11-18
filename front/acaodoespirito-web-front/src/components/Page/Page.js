@@ -1,3 +1,4 @@
+import ToTopButton from "../ToTopButton/ToTopButton";
 import Footer from "../Footer/Footer";
 import MainMenu from "../MainMenu/MainMenu";
 
@@ -18,6 +19,8 @@ const Page = (props) => {
 
         if(props.hideMainFooter !== true)
             content.push(<Footer />);
+
+        content.push(<ToTopButton />);
 
         return content;
     }
