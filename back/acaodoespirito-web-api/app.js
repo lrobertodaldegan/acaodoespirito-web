@@ -90,6 +90,7 @@ app.get('/user/:id', checkToken, async (req, res) => {
     res.status(200).json({msg: 'Consulta realizada com sucesso!', user});
 });
 
+
 const dbUser = process.env.MONGODBUSER;
 const passUser = process.env.MONGODBPASS;
 
