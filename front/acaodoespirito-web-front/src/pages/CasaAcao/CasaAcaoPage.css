@@ -15,11 +15,6 @@
 .casaacao-logo-top img{
     height: 350px;
 }
-.casaacao_pillars_icons{
-    display: flex;
-    flex-direction: row;
-    
-}
 .casaacao_pillars_icon{
     width: 33.3%;
     text-align: center;
@@ -76,3 +71,7 @@ Cinza-escuro #c8c8c8
 .footer-infos-offer img{
     opacity: .6;
 } */
+#c-a-logo{
+    opacity: 0;
+    transition: all 4s;
+}

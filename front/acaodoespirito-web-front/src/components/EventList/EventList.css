@@ -1,6 +1,4 @@
 .events-wrap{
-    display: flex;
-    flex-direction: row;
     background-color: rgb(250,250,250);
     padding: 20px 10px;
     align-items: center;
@@ -44,7 +42,7 @@
 }
 .events-icon{  
     width: 60%;
-    text-align: right;
+    text-align: center;
     color: rgb(230,230,230);
     transition: all .5s;
 }

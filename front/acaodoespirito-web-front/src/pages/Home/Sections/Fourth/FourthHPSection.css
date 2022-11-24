@@ -1,11 +1,8 @@
 .section4-about-wrap{
-    display: flex;
-    flex-direction: row; 
     flex-basis: 2;
     text-align: center;
 }
 .section4-about-item{
-    width:33%;
     margin:30px 0;
 }
 .section4-about-icon{

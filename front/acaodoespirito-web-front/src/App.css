@@ -4,6 +4,7 @@
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  overflow-x: hidden;
 }
 a,
 a:active{
@@ -23,12 +24,13 @@ legend{
 }
 
 .section{
-  padding: 10px 15%;
   font-size: 18px;
-  margin-bottom:50px;
+  padding: 2% 8% 4% 8%;
+  overflow-x: hidden;
 }
 .content{
   padding-top: 75px;
+  overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {

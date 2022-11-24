@@ -1,10 +1,11 @@
 import EventList from '../../../../components/EventList/EventList'
+import Divider from '../../../../components/Divider/Divider'
 import './ThirdHPSection.css'
 
 const ThirdHPSection = () => {
     return (
-        <div className="section hp-content-section3">
-            <hr/>
+        <div className="section row hp-content-section3">
+            <Divider style={{color: 'rgb(50,50,50)'}}/>
 
             <div className="section1-title">
                 PRÓXIMOS EVENTOS

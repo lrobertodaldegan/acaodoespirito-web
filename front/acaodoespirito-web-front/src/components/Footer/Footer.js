@@ -13,14 +13,14 @@ const Footer = () => {
     }
 
     return (
-        <div className="hp-content-footer">
-            <div className="footer-head">
+        <div className="hp-content-footer row">
+            <div className="footer-head col">
                 <img src={logo} alt="Ação do Espírito" className="main-menu-logo"/>
                 
                 <SocialIcons />
             </div>
-            <div className="footer-infos">
-                <div className="footer-infos-desc">
+            <div className="footer-infos row">
+                <div className="footer-infos-desc col">
                     <h3>Outras Informações</h3>
                     <p>
                         CNPJ:<br/>46.153.944/0001-08
@@ -32,7 +32,7 @@ const Footer = () => {
                         Endereço:<br/>Rua Nossa Senhora de Nazaré, 1662 - Boa Vista, Curitiba/PR - CEP 82640-370
                     </p>
                 </div>
-                <div className="footer-infos-offer">
+                <div className="footer-infos-offer col">
                     <h3>Doações e Ofertas</h3>
                     <img src={qrcode} alt="PIX_QRCODE"/>
                 </div>

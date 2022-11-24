@@ -18,33 +18,10 @@
 .hp-content-section2 h3{
     margin: 40px 0;
 }
-.section2-tbl, .section2-tbl-mobile{
-    overflow-x: scroll;
+
+.semana{
     border: 1px solid rgb(130,130,130);
-    border-radius: 10px;
+    border-radius:10px;
+    padding:20px 0;
     text-align: center;
-    width: 100%;
-}
-
-.section2-tbl{
-    min-width: 700px;
-}
-
-.section2-tbl-mobile th{
-    border-right: 1px solid rgb(130,130,130);
-    color: rgb(50,50,50);
-}
-
-.section2-tbl th,
-.section2-tbl-mobile th,
-.section2-tbl b,
-.section2-tbl-mobile b{
-    color: rgb(50,50,50);
-}
-
-.section2-tbl th,
-.section2-tbl td,
-.section2-tbl-mobile th,
-.section2-tbl-mobile td{
-    padding:10px 5px;
 }

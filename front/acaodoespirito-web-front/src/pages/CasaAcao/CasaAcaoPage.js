@@ -6,23 +6,25 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../assets/img/casa_acao_logo022021_edited.png'
 import qrcode from '../../assets/img/qrcode_pix_casaacao.png'
+import Divider from '../../components/Divider/Divider'
 import './CasaAcaoPage.css'
 import { useEffect } from 'react'
 
 const CasaAcaoPage = () => { 
     useEffect(() => {
         document.getElementById('main-menu').style = "background:rgb(180,180,180);";
+        document.getElementById('c-a-logo').style = "opacity:1"
     }, []);
     return (
         <div className="casaacao-page-content">
-            <div className="section">
-                <div className="casaacao-logo-top">
+            <div className="section row">
+                <div className="casaacao-logo-top col" id="c-a-logo">
                     <img src={logo} alt="Casa Ação"/>
                 </div>
             </div>
 
-            <div className="section">
-                <div className="casaacao-whois">
+            <div className="section row">
+                <div className="casaacao-whois col">
                     <h3>O QUE É 'CASA AÇÃO'?</h3>
 
                     <p>
@@ -46,22 +48,24 @@ const CasaAcaoPage = () => {
                 </div>
             </div>
 
-            <div className="section">
-                <div className="casaacao-pillars">
+            <Divider style={{color:'#810000'}} />
+
+            <div className="section row">
+                <div className="casaacao-pillars col">
                     <h3>NOSSOS PILARES</h3>
 
-                    <div className="casaacao_pillars_icons">
-                        <div className="casaacao_pillars_icon">
+                    <div className="casaacao_pillars_icons row">
+                        <div className="casaacao_pillars_icon col">
                             <FontAwesomeIcon icon={faPersonDigging} 
                                                 size="4x"/>
                             <legend>Trabalho</legend>
                         </div>
-                        <div className="casaacao_pillars_icon">
+                        <div className="casaacao_pillars_icon col">
                             <FontAwesomeIcon icon={faChurch} 
                                                 size="4x"/>
                             <legend>Fé</legend>
                         </div>
-                        <div className="casaacao_pillars_icon">
+                        <div className="casaacao_pillars_icon col">
                             <FontAwesomeIcon icon={faGraduationCap} 
                                                 size="4x"/>
                             <legend>Educação</legend>

@@ -3,7 +3,6 @@ import {
     faArrowUpRightFromSquare
 } from '@fortawesome/free-solid-svg-icons'
 import './EventList.css'
-import { redirect } from 'react-router-dom';
 import { EventsMock } from '../../mocks/EventsMock';
 
 const EventList = () => {
@@ -13,10 +12,10 @@ const EventList = () => {
     const itens = EventsMock.map((item) => {
         return (
             <div key={item.id} 
-                    className="events-wrap" 
+                    className="events-wrap row" 
                     onClick={() => redirect(item.link)}>
 
-                <div className="events-date">
+                <div className="events-date col">
                     <div className="events-day">
                         {item.day}
                     </div>
@@ -25,11 +24,11 @@ const EventList = () => {
                         {item.month}
                     </div>
                 </div>
-                <div className="events-desc">
+                <div className="events-desc col-10">
                     <p>{item.title}</p>
                     <legend>{item.desc}</legend>
                 </div>
-                <div className="events-icon">
+                <div className="events-icon col">
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="2x"/>
                 </div>
             </div> 
