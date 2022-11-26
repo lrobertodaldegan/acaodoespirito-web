@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
-    faCaretUp
+    faHandPointUp
 } from '@fortawesome/free-solid-svg-icons'
 import './ToTopButton.css'
 
@@ -26,7 +26,7 @@ const ToTopButton = () => {
         <button className="to-top-button" 
                 style={{display: visible ? 'inline' : 'none'}}
                 onClick={() => scrollToTop()}>
-            <FontAwesomeIcon icon={faCaretUp} size='4x'/>
+            <FontAwesomeIcon icon={faHandPointUp} size='2x'/>
         </button>
     );
 }

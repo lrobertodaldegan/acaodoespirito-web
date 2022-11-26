@@ -7,13 +7,13 @@ import { EventsMock } from '../../mocks/EventsMock';
 
 const EventList = () => {
 
-    const redirect = (url) => window.open(url, '_blank').focus();
+    const redirect = () => window.open('/inscreva-se', '_blank').focus();
 
     const itens = EventsMock.map((item) => {
         return (
             <div key={item.id} 
                     className="events-wrap row" 
-                    onClick={() => redirect(item.link)}>
+                    onClick={() => redirect()}>
 
                 <div className="events-date col">
                     <div className="events-day">

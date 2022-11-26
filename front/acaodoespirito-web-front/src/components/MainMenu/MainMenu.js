@@ -32,17 +32,15 @@ const MainMenu = () => {
                         <li>
                             QUEM SOMOS
                             <ul>
+                                <li><a href="/nossa-historia">NOSSA HISTÓRIA</a></li>
                                 <li><a href="/acao-em-acao">AÇÃO EM AÇÃO</a></li>
                                 <li><a href="/conferencias">CONFERÊNCIAS</a></li>
-                                <li><a href="/escola-openbook">ESCOLA OPENBOOK</a></li>
                                 <li><a href="/evangelismos">EVANGELISMOS</a></li>
                                 <li><a href="/casa-acao">CASA AÇÃO</a></li>
                                 <li><a href="/videos">VÍDEOS</a></li>
                             </ul>
                         </li>
                         <li><a href="/livros">LIVROS</a></li>
-                        <li><a href="/acao-indica">AÇÃO INDICA</a></li>
-                        <li><a href="/pregacoes">PREGAÇÕES</a></li>
                         <li><a href="/inscreva-se">PRÓXIMOS EVENTOS</a></li>
                         <li><a href="/quero-fazer-parte">QUERO FAZER PARTE</a></li>
                         <li><a href="/">?</a></li>
@@ -75,7 +73,8 @@ const MainMenu = () => {
                 </a>
             </div>
             <div className="other-actions align-right">
-                <MainButton label='Quero fazer parte! ❤️' action={() => console.log('Clicou!')}/>
+                <MainButton label='Quero fazer parte! ❤️' 
+                    action={() => window.open('/quero-fazer-parte', '_self').focus()}/>
             </div>
         </div>
     );
