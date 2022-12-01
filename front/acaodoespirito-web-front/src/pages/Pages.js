@@ -11,6 +11,7 @@ import NotFoundPage from './NotFund/NotFoundPage'
 import Inscrevase from "./Inscrevase/InscrevasePage";
 import NossaHistoriaPage from "./NossaHistoriaPage/NossaHistoriaPage";
 import DesejoFazerPartePage from "./DesejoFazerParte/DesejoFazerPartePage";
+import JesusTeAma from "./JesusTeAma/JesusTeAma";
 
 export const Pages = [
     {
@@ -78,6 +79,13 @@ export const Pages = [
         menuName: 'Equipe',
         hideOnMenu: true,
         component: <Page title='Equipe' content={<EquipePage />}/>
+    },
+    {
+        id: 11,
+        path: '/blank',
+        menuName: '?',
+        hideOnMenu: false,
+        component: <Page title='?' content={<JesusTeAma />}/>
     },
     {
         id:50,

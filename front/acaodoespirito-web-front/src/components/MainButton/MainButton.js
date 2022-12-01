@@ -7,7 +7,7 @@ const MainButton = (props) => {
         </button>
     );
 
-    if(props.action){
+    if(props.action){  
         btn = (
             <button className='main-button' onClick={() => props.action()}>
                 {props.label}

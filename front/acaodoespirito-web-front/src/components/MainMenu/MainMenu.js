@@ -43,7 +43,7 @@ const MainMenu = () => {
                         <li><a href="/livros">LIVROS</a></li>
                         <li><a href="/inscreva-se">PRÓXIMOS EVENTOS</a></li>
                         <li><a href="/quero-fazer-parte">QUERO FAZER PARTE</a></li>
-                        <li><a href="/">?</a></li>
+                        <li><a href="/blank">?</a></li>
                     </ul>
                     
                     <SocialIcons size="xl"/>
