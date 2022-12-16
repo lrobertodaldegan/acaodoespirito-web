@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import MainButton from '../../MainButton/MainButton';
 import SecondaryButton from '../../SecondaryButton/SecondaryButton';
 import Modal from '../Modal';
 import './LoginModal.css'
@@ -36,12 +35,19 @@ const LoginModal = (props) => {
         checkCredentials();
     }
 
+    const getMessage = () => {
+        if(msg && msg.length > 0)
+            return <legend>{msg}</legend>;
+        
+        return <></>;
+    }
+
     return (
         <Modal show={true} hideCloseBtn={true} content={
             <form onSubmit={submitHandler} className="login-form">
                 <div className='row'>
                     <div className='col-6 offset-3'>
-                        <legend>{msg}</legend>
+                        {getMessage()}
                     </div>
                 </div>
                 <div className="form-group row">

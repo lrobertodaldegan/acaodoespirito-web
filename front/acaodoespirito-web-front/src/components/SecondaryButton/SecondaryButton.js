@@ -1,7 +1,8 @@
 import './SecondaryButton.css'
 
 const SecondaryButton = (props) => {
-    let customStyle = props.style ? props.style : {};
+    const customStyle = props.style ? props.style : {};
+    const disabled = props.disabled && props.disabled === true;
 
     let btn = (
         <button className='sec-button' style={customStyle}>
@@ -11,7 +12,10 @@ const SecondaryButton = (props) => {
 
     if(props.action){
         btn = (
-            <button className='sec-button' style={customStyle} onClick={props.action}>
+            <button disabled={disabled} 
+                    className='sec-button' 
+                    style={customStyle} 
+                    onClick={disabled ? null : props.action}>
                 {props.label}
             </button>
         );

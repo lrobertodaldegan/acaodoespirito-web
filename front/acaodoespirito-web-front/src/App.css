@@ -1,9 +1,18 @@
 ::-webkit-scrollbar {
-  display: none;
+  width: 5px;
 }
+::-webkit-scrollbar-track {
+  background: rgb(200,200,200);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(50,50,50);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(10,10,10);
+  cursor: pointer;
+}
+
 body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   overflow-x: hidden;
 }
 a,

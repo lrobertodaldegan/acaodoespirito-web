@@ -78,7 +78,7 @@ export const Pages = [
         path: '/equipe',
         menuName: 'Equipe',
         hideOnMenu: true,
-        component: <Page title='Equipe' content={<EquipePage />}/>
+        component: <Page title='Equipe' hideMainFooter={true} content={<EquipePage />}/>
     },
     {
         id: 11,
