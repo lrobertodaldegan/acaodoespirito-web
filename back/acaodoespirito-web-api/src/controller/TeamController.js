@@ -7,7 +7,7 @@ const Schedule = require('../../model/Schedule');
 const MSG_ERRO_PADRAO = 'Houve um erro ao tentar realizar operação. Tente novamente mais tarde!';
 const MSG_SUCESSO_PADRAO = 'Operação realizada com sucesso!';
 
-const getAllMembers = async () => {
+const getAllMembers = async (req, res) => {
     try{
         let itens = await TeamMember.find({});
         
@@ -18,31 +18,41 @@ const getAllMembers = async () => {
 }
 
 const addMembers = (req, res) => {
-    let membrosCriados = [];
+    try{
+        let ms = req.body;
 
-    let ms = req.body;
+        if(ms && ms.length > 0){
+            ms.forEach(async m => {
+                let qtdExists = await TeamMember.countDocuments({name:m.name});
 
-    if(ms && ms.length > 0){
-        ms.forEach(async m => {
-            let tm = new TeamMember({id: m.id, name: m.name});
+                if(qtdExists <= 0){
+                    let tm = new TeamMember({name: m.name});
+                    
+                    await tm.save();
+                }
+            });
+        }
 
-            try{
-                await tm.save();
-
-                membrosCriados.push(m);
-            } catch(err) {
-                console.error(err);
-            }
-        });
-    }
-
-    if(membrosCriados.length > 0)
-        res.status(201).json({msg: MSG_SUCESSO_PADRAO, members: membrosCriados});
-    else
+        res.status(201).json({msg: MSG_SUCESSO_PADRAO});
+    }catch(err){
+        console.log(err);
         res.status(500).json({msg: MSG_ERRO_PADRAO});
+    }
 }
 
-const delMembers = (req, res) => {}
+const delMembers = async (req, res) => {
+    try{
+        let members = req.body;
+
+        if(members && members.length > 0)
+            members.forEach(async m => await TeamMember.deleteOne({name: m.name}));
+
+        res.status(200).json({msg: 'Operação realizada com sucesso!'});
+    }catch(e){
+        console.log(e);
+        res.status(500).json({msg: MSG_ERRO_PADRAO});
+    }
+}
 
 const getAllTasks = async (req, res) => {
     try{
@@ -55,49 +65,121 @@ const getAllTasks = async (req, res) => {
 }
 
 const addTasks = (req, res) => {
-    let tasksCriadas = [];
+    try{
+        let ts = req.body;
 
-    let ts = req.body;
+        if(ts && ts.length > 0){
+            ts.forEach(async t => {
+                let task = new Task({name: t.name});
 
-    if(ts && ts.length > 0){
-        ts.forEach(async t => {
-            let task = new Task({id: t.id, name: t.name});
-
-            try{
                 await task.save();
+            });
+        }
 
-                tasksCriadas.push(t);
-            } catch(err) {
-                console.error(err);
-            }
-        });
-    }
-
-    if(tasksCriadas.length > 0)
-        res.status(201).json({msg: 'Tasks criadas com sucesso!', tasks: tasksCriadas});
-    else
+        res.status(201).json({msg: 'Tasks criadas com sucesso!'});
+    }catch(err){
+        console.error(err);
         res.status(500).json({msg: 'Não foi possível criar Tasks!'});
+    }
 }
 
-const delTasks = (req, res) => {}
-
-const getAllSchedules = async (req, res) => {
+const delTasks = (req, res) => {
     try{
-        let schedules = await Schedule.find({});
+        let tasksId = req.body;
 
-        schedules.forEach(schd => schd.tasks = ScheduleTask.find({sId: schd.id}));
+        if(tasksId && tasksId.length > 0)
+            tasksId.forEach(async t => await Task.deleteOne({name: t.name}));
 
-        res.status(200).json({msg: 'Consulta realizada com sucesso!', schedules: schedules});
+        res.status(200).json({msg: 'Operação realizada com sucesso!'});
     }catch(e){
         res.status(500).json({msg: MSG_ERRO_PADRAO});
     }
 }
 
-const addSchedules = (req, res) => {}
+const getAllSchedules = async (req, res) => {
+    try{
+        let schedules = await Schedule.find({});
 
-const addScheduleTasks = (req, res) => {}
+        let results = [];
 
-const delSchedule = async (req, res) => {}
+        for(const schd of schedules) {
+            let s = {...schd._doc};
+
+            s.tasks = await ScheduleTask.find({sId: schd.id});
+
+            results.push(s);
+        }
+
+        res.status(200).json({msg: 'Consulta realizada com sucesso!', schedules: results});
+    }catch(e){
+        res.status(500).json({msg: MSG_ERRO_PADRAO});
+    }
+}
+
+const addSchedules = (req, res) => {
+    try{
+        let ss = req.body;
+
+        if(ss && ss.length > 0){
+            ss.forEach(async s => {
+                let schedule = new Schedule({day: s.day, month: s.month, year: s.year, wDay: s.wDay});
+
+                await schedule.save();
+            });
+        }
+
+        res.status(201).json({msg: 'Agenda registrada com sucesso!'});
+    }catch(err){
+        console.log(err);
+        res.status(500).json({msg: 'Não foi possível criar Agenda!'});
+    }
+}
+
+const addScheduleTasks = (req, res) => {
+    try{
+        let ts = req.body;
+
+        if(ts && ts.length > 0){
+            ts.forEach(async t => {
+                let sTask = new ScheduleTask({sId: t.sId, tId: t.tId, mId: t.mId});
+
+                await sTask.save();
+            });
+        }
+
+        res.status(201).json({msg: 'Escalas registradas com sucesso!'});
+    }catch(err){
+        console.log(err);
+        res.status(500).json({msg: 'Não foi possível criar as Escalas!'});
+    }
+}
+
+const delScheduleTasks = (req, res) => {
+    try{
+        let tasks = req.body;
+
+        if(tasks && tasks.length > 0)
+            tasks.forEach(async t => await ScheduleTask.deleteOne({id: t.id}));
+
+        res.status(200).json({msg: 'Operação realizada com sucesso!'});
+    }catch(e){
+        res.status(500).json({msg: MSG_ERRO_PADRAO});
+    }
+}
+
+const delSchedule = async (req, res) => {
+    try{
+        let scheduleId = req.query.scheduleId;
+
+        await ScheduleTask.deleteMany({sId: scheduleId});
+
+        await Schedule.deleteOne({id: scheduleId});
+
+        res.status(200).json({msg: 'Operação realizada com sucesso!'});
+    }catch(e){
+        res.status(500).json({msg: MSG_ERRO_PADRAO});
+    }
+}
 
 module.exports = {
     getAllMembers,
@@ -109,5 +191,6 @@ module.exports = {
     getAllSchedules,
     addSchedules,
     addScheduleTasks,
-    delSchedule 
+    delSchedule,
+    delScheduleTasks
 }

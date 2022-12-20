@@ -1,3 +1,5 @@
+const jwt = require('jsonwebtoken');
+
 const checkToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
@@ -10,6 +12,7 @@ const checkToken = (req, res, next) => {
 
         next();
     }catch(err){
+        console.log(err);
         res.status(400).json({msg: 'Token inválido!'});
     }
 }
