@@ -105,12 +105,12 @@ const CasaAcaoPage = () => {
             </div>
 
             <div className="section">
-                <div className="casaacao-card">
+                <div className="casaacao-card graters">
                     <div className="casaacao-card-qrcode">
                         <img src={qrcode} alt="qrcode" />
                     </div>
                     <div className="casaacao-card-logo">
-                        <img src={logo} alt="qrcode" />
+                        <img src={logo} alt="logo" />
                     </div>
                     <div className="casaacao-card-info">
                         <p>
@@ -125,6 +125,34 @@ const CasaAcaoPage = () => {
                             Rua Engenheiro Luiz Augusto Leão Fonseca, 491<br/> 
                             Santa Cândida, Curitiba/PR - CEP: 8640-370<br/><br/>
                         </p>
+                    </div>
+                </div>
+                <div className="casaacao-card row mobile">
+                    <div className='col'>
+                        <div className='row' style={{textAlign:'center'}}>
+                            <div className="casaacao-card-qrcode col">
+                                <img src={qrcode} alt="qrcode" />
+                            </div>
+                            <div className="casaacao-card-logo col">
+                                <img src={logo} alt="logo" />
+                            </div>
+                        </div>
+                        <div className='row'>
+                            <div className="casaacao-card-info col">
+                                <p>
+                                    <a rel="noreferrer" 
+                                        target="_blank" 
+                                        href="https://www.instagram.com/casa_acao">
+                                            @casa_acao
+                                        </a>
+                                    <br/>
+                                    CNPJ: 46.153.944/001-08<br/><br/>
+                                    contato@acaodoespirito.com.br<br/><br/>
+                                    Rua Engenheiro Luiz Augusto Leão Fonseca, 491<br/> 
+                                    Santa Cândida, Curitiba/PR - CEP: 8640-370<br/><br/>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <legend>

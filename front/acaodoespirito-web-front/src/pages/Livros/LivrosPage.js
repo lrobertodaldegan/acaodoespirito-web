@@ -59,7 +59,7 @@ const LivrosPage = () => {
             <div className='section'>
                 <div className='row livros-premsg'>
                     <div className='col'>
-                        <p>Baixe gratuitamente um de nossos e-books ou nos oferte um valor.<br/>Ofertando via PIX você abençoa o nosso ministério e faz com que essa mensagem chegue mais longe.</p>
+                        <p>Baixe gratuitamente um de nossos e-books ou nos oferte um valor.<br/><br/>Ofertando via PIX você abençoa o nosso ministério e faz com que essa mensagem chegue mais longe.</p>
                     </div>
                 </div>
 

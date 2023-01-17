@@ -72,7 +72,7 @@ const MainMenu = () => {
                     />
                 </a>
             </div>
-            <div className="other-actions align-right">
+            <div className="other-actions">
                 <MainButton label='Quero fazer parte! ❤️' 
                     action={() => window.open('/quero-fazer-parte', '_self').focus()}/>
             </div>

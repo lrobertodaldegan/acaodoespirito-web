@@ -1,8 +1,8 @@
 
-const TeamMember = require('../../model/TeamMember');
-const Task = require('../../model/Task');
-const ScheduleTask = require('../../model/ScheduleTask');
-const Schedule = require('../../model/Schedule');
+const TeamMember = require('../model/TeamMember');
+const Task = require('../model/Task');
+const ScheduleTask = require('../model/ScheduleTask');
+const Schedule = require('../model/Schedule');
 
 const MSG_ERRO_PADRAO = 'Houve um erro ao tentar realizar operação. Tente novamente mais tarde!';
 const MSG_SUCESSO_PADRAO = 'Operação realizada com sucesso!';

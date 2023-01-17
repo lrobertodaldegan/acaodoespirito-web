@@ -1,10 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { 
-    faBullhorn,
-    faPlay,
-    faBookOpen,
-    faBook
-} from '@fortawesome/free-solid-svg-icons'
 import Divider from '../../../../components/Divider/Divider'
 import './FourthHPSection.css'
 
@@ -17,46 +10,63 @@ const FourthHPSection = () => {
                 SOBRE NÓS
             </div>
 
-            <div className="section4-about-wrap row">
-                <div className="section4-about-item col">
-                    <FontAwesomeIcon icon={faBook} 
-                                    size='8x'
-                                    className='section4-about-icon'/>
-                    <p>Livros</p>
+            <div className='about-links row graters'>
+                <div className='col offset-1'>
+                    <div className='about-links-item'>
+                        <a href='/acao-em-acao'>Ação em Ação</a>
+                    </div>
+                    <div className='about-links-item'>
+                        <a href='/conferencias'>Conferências</a>
+                    </div>
                 </div>
-                <div className="section4-about-item col">
-                    ICON
-                    <p>Ação em Ação</p>
+                <div className='col'>
+                    <div className='about-links-item'>
+                        <a href='/casa-acao'>Casa Ação</a>
+                    </div>
+                    <div className='about-links-item'>
+                        <a href='/evangelismos'>Evangelismos</a>
+                    </div>
                 </div>
-                <div className="section4-about-item col">
-                    ICON
-                    <p>Conferências</p>
-                </div>
-            </div>
-            <div className="section4-about-wrap row">
-                <div className="section4-about-item col">
-                    <FontAwesomeIcon icon={faBookOpen} 
-                                    size='8x'
-                                    className='section4-about-icon'/>
-                    <p>Escola Openbook</p>
-                </div>
-                <div className="section4-about-item col">
-                    <FontAwesomeIcon icon={faBullhorn} 
-                                    size='8x'
-                                    className='section4-about-icon'/>
-                    <p>Evangelismos</p>
-                </div>
-                <div className="section4-about-item col">
-                    ICON
-                    <p>Casa Ação</p>
+                <div className='col'>
+                    <div className='about-links-item'>
+                        <a href='/livros'>Livros</a>
+                    </div>
+                    <div className='about-links-item'>
+                        <a href='/videos'>Vídeos</a>
+                    </div>
                 </div>
             </div>
-            <div className="section4-about-wrap row">
-                <div className="section4-about-item col-4">
-                    <FontAwesomeIcon icon={faPlay} 
-                                    size='8x'
-                                    className='section4-about-icon'/>
-                    <p>Vídeos</p>
+
+            <div className='about-links row mobile'>
+                <div className='col-6'>
+                    <div className='about-links-item'>
+                        <a href='/acao-em-acao'>Ação em Ação</a>
+                    </div>
+                </div>
+                <div className='col-6'>
+                    <div className='about-links-item'>
+                        <a href='/conferencias'>Conferências</a>
+                    </div>
+                </div>
+                <div className='col-6'>
+                    <div className='about-links-item'>
+                        <a href='/casa-acao'>Casa Ação</a>
+                    </div>
+                </div>
+                <div className='col-6'>
+                    <div className='about-links-item'>
+                        <a href='/evangelismos'>Evangelismos</a>
+                    </div>
+                </div>
+                <div className='col-6'>
+                    <div className='about-links-item'>
+                        <a href='/livros'>Livros</a>
+                    </div>
+                </div>
+                <div className='col-6'>
+                    <div className='about-links-item'>
+                        <a href='/videos'>Vídeos</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@ const EventList = () => {
                     className="events-wrap row" 
                     onClick={() => redirect()}>
 
-                <div className="events-date col">
+                <div className="events-date col graters">
                     <div className="events-day">
                         {item.day}
                     </div>
@@ -24,12 +24,29 @@ const EventList = () => {
                         {item.month}
                     </div>
                 </div>
-                <div className="events-desc col-10">
+                <div className="events-desc col-10 graters">
                     <p>{item.title}</p>
                     <legend>{item.desc}</legend>
                 </div>
-                <div className="events-icon col">
+                <div className="events-icon col graters">
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="2x"/>
+                </div>
+
+                <div className="events-date col-1 mobile">
+                    <div className="events-day">
+                        {item.day}
+                    </div>
+                    
+                    <div className="events-mon">
+                        {item.month}
+                    </div>
+                </div>
+                <div className="events-desc col-6 mobile">
+                    <p>{item.title}</p>
+                    <legend>{item.desc}</legend>
+                </div>
+                <div className="events-icon col-1 mobile">
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </div>
             </div> 
         );

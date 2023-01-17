@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import './TaskCalendar.css'
+import TaskCalendarMark from './TaskCalendarMark/TaskCalendarMark';
 
 const TaskCalendar = (props) => {
     const [filterItemId, setFilterItemId] = useState(null);
@@ -12,6 +13,7 @@ const TaskCalendar = (props) => {
     const tasks = props.tasks ? props.tasks : [];
     const schedules = props.schedules ? props.schedules : [];
     const mode = props.mode ? props.mode : 1;
+    const editable = props.editable && props.editable === true;
 
     const getSchedulesCols = () => {
         let itens = teamMembers;
@@ -21,7 +23,6 @@ const TaskCalendar = (props) => {
 
         let t = [];
 
-        
         if(filterItemId && filterItemId !== null){
             // eslint-disable-next-line
             itens = itens.filter(tm => filterItemId == tm.id);
@@ -63,19 +64,22 @@ const TaskCalendar = (props) => {
                 }
 
                 cols.forEach(t => {
-                    let slot = <td className='task-calendar-tasks-mark'></td>;
+                    let mark = false;
 
                     if(sdls.tasks){
                         let matchItens = sdls.tasks.filter(st => t.id === st.tId && m.id === st.mId);
 
-                        if(matchItens && matchItens.length > 0)
-                            slot = <td className='task-calendar-tasks-mark'>X</td>;
+                        mark = matchItens && matchItens.length > 0;
                     }
 
-                    slots.push(slot);
+                    slots.push(<TaskCalendarMark selectable={editable} taskId={t.id} memberId={m.id} selected={mark} />);
                 });
 
-                rows.push(<tr>{slots.map(sl => sl)}</tr>);
+                rows.push(
+                    <tr className='task-calendar-tasks-marks-row'>
+                        {slots.map(sl => sl)}
+                    </tr>
+                );
             });
 
             s.push(
@@ -120,19 +124,22 @@ const TaskCalendar = (props) => {
                 }
 
                 cols.forEach(m => {
-                    let slot = <td className='task-calendar-tasks-mark'></td>;
+                    let mark = false;
 
                     if(sdls.tasks){
                         let matchItens = sdls.tasks.filter(st => t.id === st.tId && m.id === st.mId);
 
-                        if(matchItens && matchItens.length > 0)
-                            slot = <td className='task-calendar-tasks-mark'>X</td>;
+                        mark = matchItens && matchItens.length > 0;
                     }
 
-                    slots.push(slot);
+                    slots.push(<TaskCalendarMark selectable={editable} taskId={t.id} memberId={m.id} selected={mark} />);
                 });
 
-                rows.push(<tr>{slots.map(sl => sl)}</tr>);
+                rows.push(
+                    <tr className='task-calendar-tasks-marks-row'>
+                        {slots.map(sl => sl)}
+                    </tr>
+                );
             });
 
             s.push(

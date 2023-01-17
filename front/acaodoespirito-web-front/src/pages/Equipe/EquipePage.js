@@ -18,16 +18,16 @@ import FileUploadButton from '../../components/FileUploadButton/FileUploadButton
 
 const EquipePage = () => {
     const [loginSuccess, setLoginSuccess] = useState(false);
+    const [superUser, setSuperUser] = useState(false);
 
     useEffect(() => {
         document.getElementsByClassName('main-button')[0].style = "display:none";
     });
 
     const checkLogin = (result) => {
-        console.log(result);
-        
-        if(result.success === true)
-            setLoginSuccess(true);
+        setLoginSuccess(result.success && result.success === true);
+
+        setSuperUser(result.superuser && result.superuser === true);
     }
 
     const openDownloadTab = (file) => {
@@ -46,6 +46,7 @@ const EquipePage = () => {
                             <TaskCalendar members={TeamMock.members} 
                                     tasks={TeamMock.tasks}
                                     schedules={TeamMock.schedules}
+                                    editable={superUser}
                                     mode={2}
                             />
                         

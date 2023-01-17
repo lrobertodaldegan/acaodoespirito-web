@@ -57,4 +57,16 @@
 .task-calendar-filters{
     margin:0 0 20px 0 !important;
 }
-
+.task-calendar-tasks-mark{
+    color: rgb(8, 141, 8);
+    transition: all .2s;
+}
+.task-calendar-tasks-mark:hover{
+    background-color: rgb(225,225,225);
+    color: rgb(155, 11, 11);
+    cursor:pointer;
+}
+.task-calendar-tasks-marks-row:hover{
+    background-color: rgb(240,240,240);
+    cursor:pointer;
+}

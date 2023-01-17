@@ -50,13 +50,13 @@ const NossaHistoriaPage = () => {
             id:7,
             title:'Nasce a Casa Ação',
             desc:'A semente de 5 anos atrás florece. É dado início ao projeto social "Casa Ação" com o objetivo de acolher jovens que atingem a maior-idade, sendo duporte para toda a Curitiba e Região metropolitana.',
-            date: '2020'
+            date: '2020 - Hoje'
         },
         {
             id:8,
             title:'Igreja Ação do Espírito',
             desc:'Em meio aos atendimentos com os jovens do projeto social, é criada a primeira célula Ação do Espírito que, alguns meses depois, viria a formar a Igreja Ação do Espírito.',
-            date: '2021'
+            date: '2021 - Hoje'
         }
     ];
 

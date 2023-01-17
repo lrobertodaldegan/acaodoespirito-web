@@ -34,7 +34,7 @@ const EvangelismosPage = () => {
                         EVANGELISMOS    
                     </div>    
                 </div>
-                <div className='row ev-evangelismos-desc ev-invasao'>
+                <div className='row ev-evangelismos-desc ev-invasao graters'>
                     <div className='col ev-invasao-logo'>
                         <img src={invasaoLogo} alt="Invasão"/>
                     </div> 
@@ -56,7 +56,29 @@ const EvangelismosPage = () => {
                         </p>  
                     </div>   
                 </div>
-                <div className='row ev-evangelismos-desc ev-zombie'>
+                <div className='row ev-evangelismos-desc ev-invasao mobile'>
+                    <div className='col-12 ev-invasao-logo'>
+                        <img src={invasaoLogo} alt="Invasão"/>
+                    </div> 
+                    <div className='col-12'>
+                        <p>
+                            <b>VISÃO</b>
+                            <br/>
+                            Levar o evangelho para todas as escolas e faculdades através de células ministradas pelos estudantes.
+                        </p> 
+                        <p>
+                            <b>VALOR</b>
+                            <br/>
+                            Não diminuir a mensagem do evangelho, propagar a verdade com todas as forças, e entendendo que este é o tempo de proclamar a mensagem de Jesus.
+                        </p>  
+                        <p>
+                            <b>MISSÃO</b>
+                            <br/>
+                            Alcançar aqueles que precisam de amor através daquilo que somos.
+                        </p>  
+                    </div>   
+                </div>
+                <div className='row ev-evangelismos-desc ev-zombie graters'>
                     <div className='col'>
                         <h3>ZOMBIE WALK - CURITIBA 2018</h3>
                           
@@ -65,6 +87,18 @@ const EvangelismosPage = () => {
                         </p>  
                     </div>   
                     <div className='col'>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FAcaodoEspirito%2Fvideos%2F1893682327371361%2F&show_text=false&width=476&t=0" width="476" height="476" style={{width:'100%', border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" title="fb-evangelismo"></iframe>
+                    </div> 
+                </div>
+                <div className='row ev-evangelismos-desc ev-zombie mobile'>
+                    <div className='col-12'>
+                        <h3>ZOMBIE WALK - CURITIBA 2018</h3>
+                          
+                        <p>
+                            O evento, tradicional na cidade, reuniu em 2018 cerca de 30 mil pessoas. Nesta ocasião tivemos a oportunidade de falar do amor de Deus às pessoas e orar por elas, compartilhando as boas novas do evangelho.  
+                        </p>  
+                    </div>   
+                    <div className='col-12'>
                         <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FAcaodoEspirito%2Fvideos%2F1893682327371361%2F&show_text=false&width=476&t=0" width="476" height="476" style={{width:'100%', border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" title="fb-evangelismo"></iframe>
                     </div> 
                 </div>

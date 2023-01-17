@@ -1,7 +1,8 @@
 const bcrypt  = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const User = require('../../model/User');
+const User = require('../model/User');
+const SuperUser = require('../model/SuperUser');
 
 const getUserById = async (req, res) => {
     const user = await User.findById(req.params.id, '-password');
@@ -66,8 +67,43 @@ const userLogin = async (req, res) => {
     }
 }
 
+const promoteUser = async (req, res) => {
+    try{
+        let users = req.body;
+
+        if(users && users.length > 0){
+            users.forEach(async u => {
+                let nu = new SuperUser({username:u.username});
+
+                await nu.save();
+            });
+        }
+
+        res.status(201).json({msg: 'Usuários promovidos com sucesso!'});
+    } catch(err) {
+        console.error(err);
+        res.status(500).json({msg: 'Não foi possível realizar operação!'});
+    }
+}
+
+const demoteUser = async (req, res) => {
+    try{
+        let users = req.body;
+
+        if(users && users.length > 0)
+            users.forEach(async u => await SuperUser.deleteOne({username:u.username}));
+
+        res.status(200).json({msg: 'Usuários rebaixados com sucesso!'});
+    } catch(err) {
+        console.error(err);
+        res.status(500).json({msg: 'Não foi possível realizar operação!'});
+    }
+}
+
 module.exports = {
     getUserById,
     userLogin,
-    registerUser
+    registerUser,
+    promoteUser,
+    demoteUser
 }

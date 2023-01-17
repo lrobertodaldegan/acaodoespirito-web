@@ -20,6 +20,8 @@ const LoginModal = (props) => {
             //TODO chamar api pra autenticar usuário
             result.success = true;
             result.status = 200;
+            result.user = 'xpto';
+            result.superuser = true;//TODO adicionar validação em api específica
             result.reason = 'Ok!'
         } else {
             setMsg(`Deu pra fazer o login não. Os dados estão corretos?`);

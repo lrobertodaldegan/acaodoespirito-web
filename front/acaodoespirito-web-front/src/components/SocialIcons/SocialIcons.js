@@ -8,7 +8,7 @@ import './SocialIcons.css'
 const SocialIcons = (props) => {
     let size = props.size ? props.size : "2x";
     return (
-        <div style={{width: '100%'}}>
+        <div className='social-icons-wrap' style={{width: '100%'}}>
             <a target="_blank" rel="noreferrer" href="https://www.instagram.com/acaodoespirito/">
                 <FontAwesomeIcon icon={faInstagram} 
                                 size={size}

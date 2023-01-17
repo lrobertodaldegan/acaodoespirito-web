@@ -51,7 +51,7 @@ const AcaoEmAcaoPage = () => {
                     <div className="col">
                         <img src={giu} alt="Giu Simeão"/>
                         <p>Giulianna Simeão</p>
-                        <legend>Fundadora, minitração</legend>
+                        <legend>Fundadora, ministração</legend>
                         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/giukurzlop/">
                             <FontAwesomeIcon icon={faInstagram} size='lg'/>
                         </a>
