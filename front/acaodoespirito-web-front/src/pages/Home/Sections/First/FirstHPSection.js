@@ -15,21 +15,15 @@ const FirstHPSection = () => {
             <div className="row section1-mvv graters">
                 <div className="col section1-mvv-child">
                     <h4>MISSÃO</h4>
-                    <p>Ser uma <b>igreja</b> fortalecida pelo 
-                        <b>Espírito Santo</b>, 
-                        através da adoração, ensinamento das escrituras, 
-                        oração e dons. 
-                        <b>Amar o próximo e cumprir o "ide"</b>.</p>
+                    <p>Ser uma <b>igreja</b> fortalecida pelo <b>Espírito Santo</b>, através da adoração, ensinamento das escrituras, oração e dons. <b>Amar o próximo e cumprir o "ide"</b>.</p>
                 </div>
                 <div className="col section1-mvv-child">
                     <h4>VISÃO</h4>
-                    <p><b>Efésios 5:18</b> nos diz para sermos cheios do 
-                    <b> Espírito Santo</b>.</p>
+                    <p><b>Efésios 5:18</b> nos diz para sermos cheios do <b> Espírito Santo</b>.</p>
                 </div>
                 <div className="col section1-mvv-child">
                     <h4>VALORES</h4>
-                    <p>Crer nos princípios da <b>escritura</b> como 
-                        <b>única e verdadeira</b>.</p>
+                    <p>Crer nos princípios da <b>escritura</b> como <b> única e verdadeira</b>.</p>
                 </div>
             </div>
 
@@ -37,25 +31,19 @@ const FirstHPSection = () => {
                 <div className='row'>
                     <div className="col section1-mvv-child">
                         <h5>MISSÃO</h5>
-                        <p>Ser uma <b>igreja</b> fortalecida pelo 
-                            <b>Espírito Santo</b>, 
-                            através da adoração, ensinamento das escrituras, 
-                            oração e dons. 
-                            <b>Amar o próximo e cumprir o "ide"</b>.</p>
+                        <p>Ser uma <b>igreja</b> fortalecida pelo <b>Espírito Santo</b>, através da adoração, ensinamento das escrituras, oração e dons. <b>Amar o próximo e cumprir o "ide"</b>.</p>
                     </div>
                 </div>
                 <div className='row'>
                     <div className="col section1-mvv-child">
                         <h5>VISÃO</h5>
-                        <p><b>Efésios 5:18</b> nos diz para sermos cheios do 
-                        <b> Espírito Santo</b>.</p>
+                        <p><b>Efésios 5:18</b> nos diz para sermos cheios do <b> Espírito Santo</b>.</p>
                     </div>
                 </div>
                 <div className='row'>
                     <div className="col section1-mvv-child">
                         <h5>VALORES</h5>
-                        <p>Crer nos princípios da <b>escritura</b> como 
-                            <b>única e verdadeira</b>.</p>
+                        <p>Crer nos princípios da <b>escritura</b> como <b>única e verdadeira</b>.</p>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 export const EventsMock = [
-    {
+    /*{
         id:0,
         day: '12',
         month: 'OUT',
@@ -16,5 +16,5 @@ export const EventsMock = [
         title: 'Evento especial',
         desc: 'Detalhes',
         link: null
-    },
+    },*/
 ];
