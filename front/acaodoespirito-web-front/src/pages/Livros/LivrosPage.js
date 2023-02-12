@@ -80,7 +80,7 @@ const LivrosPage = () => {
                             <div className='col offer-modal-desc'>
                                 <p><b>Obrigado!</b><br/> Ofertando via PIX você abençoa o nosso ministério e faz com que essa mensagem chegue mais longe!</p>
                                 <img alt='PIX' src={pixQrCode}/>
-                                <legend>❤️‍🔥<br/>Deus te abençoe e que você seja cheio do Espírito Santo!</legend>
+                                <legend>❤️‍🔥<br/>Deus te abençoe e que você seja cheio do Espírito Santo!<br/>Chave PIX: CNPJ: 46153944000108</legend>
                             </div>
                         </div>
                     )}

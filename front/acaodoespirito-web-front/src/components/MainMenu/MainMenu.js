@@ -11,6 +11,9 @@ const MainMenu = () => {
 
     const showHideOptions = () => setShowOptions(!showOptions);
 
+    const urlprefix = 'http://acaodoespirito.com.br:21017';
+    const secureUrlprefix = 'https://acaodoespirito.com.br';
+
     let modalOptions = <></>;
     
     if(showOptions) {
@@ -28,22 +31,22 @@ const MainMenu = () => {
                 
                 <div className="menu-options">
                     <ul>
-                        <li><a href="/">HOME</a></li>
+                        <li><a href={`${secureUrlprefix}`}>HOME</a></li>
                         <li>
                             QUEM SOMOS
                             <ul>
-                                <li><a href="/nossa-historia">NOSSA HISTÓRIA</a></li>
-                                <li><a href="/acao-em-acao">AÇÃO EM AÇÃO</a></li>
-                                <li><a href="/conferencias">CONFERÊNCIAS</a></li>
-                                <li><a href="/evangelismos">EVANGELISMOS</a></li>
-                                <li><a href="/casa-acao">CASA AÇÃO</a></li>
-                                <li><a href="/videos">VÍDEOS</a></li>
+                                <li><a href={`${urlprefix}/nossa-historia`}>NOSSA HISTÓRIA</a></li>
+                                <li><a href={`${urlprefix}/acao-em-acao`}>AÇÃO EM AÇÃO</a></li>
+                                
+                                <li><a href={`${urlprefix}/evangelismos`}>EVANGELISMOS</a></li>
+                                <li><a href={`${urlprefix}/casa-acao`}>CASA AÇÃO</a></li>
+                                <li><a href={`${urlprefix}/videos`}>VÍDEOS</a></li>
                             </ul>
                         </li>
-                        <li><a href="/livros">LIVROS</a></li>
-                        <li><a href="/inscreva-se">PRÓXIMOS EVENTOS</a></li>
-                        <li><a href="/quero-fazer-parte">QUERO FAZER PARTE</a></li>
-                        <li><a href="/blank">?</a></li>
+                        <li><a href={`${urlprefix}/livros`}>LIVROS</a></li>
+                        
+                        <li><a href={`${urlprefix}/quero-fazer-parte`}>QUERO FAZER PARTE</a></li>
+                        <li><a href={`${urlprefix}/blank`}>?</a></li>
                     </ul>
                     
                     <SocialIcons size="xl"/>
@@ -65,7 +68,7 @@ const MainMenu = () => {
                 </button>
             </div>
             <div className="logo">
-                <a href="/">
+                <a href={`${secureUrlprefix}`}>
                     <img src={logo} alt="Ação do Espírito" 
                         className="main-menu-logo"
                         id="main-menu-logo"
@@ -74,7 +77,7 @@ const MainMenu = () => {
             </div>
             <div className="other-actions">
                 <MainButton label='Quero fazer parte! ❤️' 
-                    action={() => window.open('/quero-fazer-parte', '_self').focus()}/>
+                    action={() => window.open(`${urlprefix}/quero-fazer-parte`, '_self').focus()}/>
             </div>
         </div>
     );

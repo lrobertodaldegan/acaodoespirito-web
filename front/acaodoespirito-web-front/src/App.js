@@ -8,7 +8,7 @@ function App() {
       <Routes>
         {Pages.map(page => <Route key={page.id} 
                                     path={page.path} 
-                                    element={page.component} />)}
+        element={page.component} />)}
       </Routes>
     </Router>
   );
