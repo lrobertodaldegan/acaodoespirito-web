@@ -20,7 +20,6 @@ const SecondHPSection = () => {
                 </div>
                 <div className="col dia-semana">
                     <h5>SEGUNDA</h5>
-                    <p><b>Ação House</b><br/>S. José dos Pinhais<br/>20hrs*</p><br/>
                     <p><b>Ação House</b><br/>Boa Vista<br/>20hrs*</p>
                 </div>
                 <div className="col dia-semana">
@@ -33,7 +32,8 @@ const SecondHPSection = () => {
                 </div>
                 <div className="col dia-semana">
                     <h5>QUINTA</h5>
-                    <p><b>HabitAção (Sala de oração)</b><br/>19:30hrs*</p>
+                    <p><b>HabitAção (Sala de oração)</b><br/>19:30hrs*</p><br/>
+                    <p><b>Escola OpenBook</b><br/>20:30hrs*</p>
                 </div>
                 <div className="col dia-semana">
                     SEXTA
@@ -53,7 +53,6 @@ const SecondHPSection = () => {
                 </div>
                 <div className="col-6 dia-semana">
                     <h5>SEGUNDA</h5>
-                    <p><b>Ação House</b><br/>S. José dos Pinhais<br/>20hrs*</p><br/>
                     <p><b>Ação House</b><br/>Boa Vista<br/>20hrs*</p>
                 </div>
                 <div className="col-6 dia-semana">
@@ -66,7 +65,8 @@ const SecondHPSection = () => {
                 </div>
                 <div className="col-6 dia-semana">
                     <h5>QUINTA</h5>
-                    <p><b>HabitAção (Sala de oração)</b><br/>19:30hrs*</p>
+                    <p><b>HabitAção (Sala de oração)</b><br/>19:30hrs*</p><br/>
+                    <p><b>Escola OpenBook</b><br/>20:30hrs*</p>
                 </div>
                 <div className="col-6 dia-semana">
                     SEXTA
@@ -82,11 +82,11 @@ const SecondHPSection = () => {
             <legend>*Hey! Quer sabe mais? Entre em contato!</legend>
 
             <div className="section2-map">
-                <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Igreja+A%C3%A7%C3%A3o+do+Esp%C3%ADrito/@-25.3872343,-49.2422352,15z/data=!4m2!3m1!1s0x0:0x6351df6f1ec915b3?sa=X&ved=2ahUKEwio0-WA8or9AhWZr5UCHWosCj8Q_BJ6BAhaEAg">
+                <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/A6HWEaV9AVMx8QPm8">
                     <FontAwesomeIcon icon={faMapLocationDot} 
                                     size='3x'
                                     className='section2-map-icon'/><br/>
-                    Rua Nossa Senhora de Nazaré, 1662 - Boa Vista, Curitiba - PR
+                    Rua Mateus Leme, 1133 - Bom Retiro, Curitiba - PR
                 </a>
             </div>
         </div>

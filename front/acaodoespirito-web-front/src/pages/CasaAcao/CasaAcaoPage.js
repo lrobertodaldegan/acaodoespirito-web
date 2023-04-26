@@ -120,10 +120,10 @@ const CasaAcaoPage = () => {
                                     @casa_acao
                                 </a>
                             <br/>
-                            CNPJ: 46.153.944/001-08<br/><br/>
+                            CNPJ: 46.153.944/0001-08<br/><br/>
                             contato@acaodoespirito.com.br<br/><br/>
-                            Rua Engenheiro Luiz Augusto Leão Fonseca, 491<br/> 
-                            Santa Cândida, Curitiba/PR - CEP: 8640-370<br/><br/>
+                            Rua Mateus Leme, 1133<br/> 
+                            Bom Retiro, Curitiba/PR - CEP: 80520-174<br/><br/>
                         </p>
                     </div>
                 </div>
@@ -146,10 +146,10 @@ const CasaAcaoPage = () => {
                                             @casa_acao
                                         </a>
                                     <br/>
-                                    CNPJ: 46.153.944/001-08<br/><br/>
+                                    CNPJ: 46.153.944/0001-08<br/><br/>
                                     contato@acaodoespirito.com.br<br/><br/>
-                                    Rua Engenheiro Luiz Augusto Leão Fonseca, 491<br/> 
-                                    Santa Cândida, Curitiba/PR - CEP: 8640-370<br/><br/>
+                                    Rua Mateus Leme, 1133<br/> 
+                                    Bom Retiro, Curitiba/PR - CEP: 80520-174<br/><br/>
                                 </p>
                             </div>
                         </div>

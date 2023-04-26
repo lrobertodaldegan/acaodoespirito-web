@@ -65,8 +65,8 @@ const JesusTeAma = () => {
                         <br/>
                         .
                         <br/>
-                        <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/dir/-25.3751483,-49.1929618/R.+N.+Sra.+de+Nazar%C3%A9,+1662+-+Boa+Vista,+Curitiba+-+PR,+82560-000/@-25.3819565,-49.2527341,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94dce66222ea7c6b:0xba2fdf1b143a9573!2m2!1d-49.2422343!2d-25.3872336">
-                            Estamos na Rua Nossa Senhora de Nazaré, 1662 - Boa Vista, Curitiba - PR.
+                        <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/A6HWEaV9AVMx8QPm8">
+                            Estamos na Rua Mateus Leme, 1133 - Bom Retiro, Curitiba - PR.
                         </a>
                         <br/>
                         .

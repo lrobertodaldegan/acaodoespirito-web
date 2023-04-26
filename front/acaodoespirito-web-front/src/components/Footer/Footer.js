@@ -29,7 +29,7 @@ const Footer = () => {
                         E-mail:<br/>contato@acaodoespirito.com.br
                     </p>
                     <p>
-                        Endereço:<br/>Rua Nossa Senhora de Nazaré, 1662 - Boa Vista, Curitiba/PR - CEP 82640-370
+                        Endereço:<br/>Rua Mateus Leme, 1133 - Bom Retiro, Curitiba/PR - CEP 80520-174
                     </p>
                 </div>
                 <div className="footer-infos-offer col">
