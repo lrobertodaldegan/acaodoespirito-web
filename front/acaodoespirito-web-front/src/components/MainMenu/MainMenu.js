@@ -35,18 +35,18 @@ const MainMenu = () => {
                         <li>
                             QUEM SOMOS
                             <ul>
-                                <li><a href={`${urlprefix}/nossa-historia`}>NOSSA HISTÓRIA</a></li>
-                                <li><a href={`${urlprefix}/acao-em-acao`}>AÇÃO EM AÇÃO</a></li>
+                                <li><a href={`${secureUrlprefix}/nossa-historia`}>NOSSA HISTÓRIA</a></li>
+                                <li><a href={`${secureUrlprefix}/acao-em-acao`}>AÇÃO EM AÇÃO</a></li>
                                 
-                                <li><a href={`${urlprefix}/evangelismos`}>EVANGELISMOS</a></li>
-                                <li><a href={`${urlprefix}/casa-acao`}>CASA AÇÃO</a></li>
-                                <li><a href={`${urlprefix}/videos`}>VÍDEOS</a></li>
+                                <li><a href={`${secureUrlprefix}/evangelismos`}>EVANGELISMOS</a></li>
+                                <li><a href={`${secureUrlprefix}/casa-acao`}>CASA AÇÃO</a></li>
+                                <li><a href={`${secureUrlprefix}/videos`}>VÍDEOS</a></li>
                             </ul>
                         </li>
-                        <li><a href={`${urlprefix}/livros`}>LIVROS</a></li>
+                        <li><a href={`${secureUrlprefix}/livros`}>LIVROS</a></li>
                         
-                        <li><a href={`${urlprefix}/quero-fazer-parte`}>QUERO FAZER PARTE</a></li>
-                        <li><a href={`${urlprefix}/blank`}>?</a></li>
+                        <li><a href={`${secureUrlprefix}/quero-fazer-parte`}>QUERO FAZER PARTE</a></li>
+                        <li><a href={`${secureUrlprefix}/blank`}>?</a></li>
                     </ul>
                     
                     <SocialIcons size="xl"/>
@@ -77,7 +77,7 @@ const MainMenu = () => {
             </div>
             <div className="other-actions">
                 <MainButton label='Quero fazer parte! ❤️' 
-                    action={() => window.open(`${urlprefix}/quero-fazer-parte`, '_self').focus()}/>
+                    action={() => window.open(`${secureUrlprefix}/quero-fazer-parte`, '_self').focus()}/>
             </div>
         </div>
     );
