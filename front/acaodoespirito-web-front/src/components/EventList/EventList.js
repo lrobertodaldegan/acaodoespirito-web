@@ -8,8 +8,9 @@ import { EventsMock } from '../../mocks/EventsMock';
 const EventList = () => {
 
     const urlprefix = 'http://acaodoespirito.com.br:21017';
+    const secureUrlprefix = 'https://acaodoespirito.com.br';
 
-    const redirect = () => window.open(`${urlprefix}/inscreva-se`, '_blank').focus();
+    const redirect = () => window.open(`${secureUrlprefix}/inscreva-se`, '_blank').focus();
 
     const itens = EventsMock.map((item) => {
         return (

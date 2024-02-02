@@ -12,6 +12,7 @@ import Inscrevase from "./Inscrevase/InscrevasePage";
 import NossaHistoriaPage from "./NossaHistoriaPage/NossaHistoriaPage";
 import DesejoFazerPartePage from "./DesejoFazerParte/DesejoFazerPartePage";
 import JesusTeAma from "./JesusTeAma/JesusTeAma";
+import EscolaPage from "./Escola/EscolaPage";
 
 export const Pages = [
     {
@@ -86,6 +87,13 @@ export const Pages = [
         menuName: '?',
         hideOnMenu: false,
         component: <Page title='?' content={<JesusTeAma />}/>
+    },
+    {
+        id: 12,
+        path: '/escola',
+        menuName: 'Escola Openbook',
+        hideOnMenu: false,
+        component: <Page title='Escola OpenBook' content={<EscolaPage />}/>
     },
     {
         id:50,

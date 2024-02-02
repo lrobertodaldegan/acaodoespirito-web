@@ -44,7 +44,7 @@ const MainMenu = () => {
                             </ul>
                         </li>
                         <li><a href={`${secureUrlprefix}/livros`}>LIVROS</a></li>
-                        
+                        <li><a href={`${secureUrlprefix}/escola`}>ESCOLA OPENBOOK</a></li>
                         <li><a href={`${secureUrlprefix}/quero-fazer-parte`}>QUERO FAZER PARTE</a></li>
                         <li><a href={`${secureUrlprefix}/blank`}>?</a></li>
                     </ul>
