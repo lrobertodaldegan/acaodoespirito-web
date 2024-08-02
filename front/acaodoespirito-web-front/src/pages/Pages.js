@@ -13,6 +13,7 @@ import NossaHistoriaPage from "./NossaHistoriaPage/NossaHistoriaPage";
 import DesejoFazerPartePage from "./DesejoFazerParte/DesejoFazerPartePage";
 import JesusTeAma from "./JesusTeAma/JesusTeAma";
 import EscolaPage from "./Escola/EscolaPage";
+import WelcomePage from "./Welcome/WelcomePage";
 
 export const Pages = [
     {
@@ -94,6 +95,13 @@ export const Pages = [
         menuName: 'Escola Openbook',
         hideOnMenu: false,
         component: <Page title='Escola OpenBook' content={<EscolaPage />}/>
+    },
+    {
+        id: 13,
+        path: '/welcome',
+        menuName: 'Bem-vindo',
+        hideOnMenu: true,
+        component: <Page title='Bem-vindo!' content={<WelcomePage />}/>
     },
     {
         id:50,
